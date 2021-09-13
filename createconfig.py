@@ -1,6 +1,6 @@
 import serial
 
-arduino = serial.Serial(port="/dev/ttyUSB0", baudrate=9600, timeout=.1)
+arduino = serial.Serial(port=input("What port is the arduino on? "), baudrate=9600, timeout=.1)
 
 keys = list(range(0, int(input("How many keys are there? "))))
 

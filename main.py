@@ -3,7 +3,7 @@ from pyautogui import press
 import json
 
 
-arduino = serial.Serial(port="/dev/ttyUSB0", baudrate=9600, timeout=.1)
+arduino = serial.Serial(port=input("What port is the arduino on? "), baudrate=9600, timeout=.1)
 try:
     f = open("config.txt")
     print("Ready! Waiting for keypresses...")
